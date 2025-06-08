@@ -65,7 +65,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>keytool-maven-plugin</artifactId>
-                <version>1.2</version>
+                <version>1.7</version>
                 <executions>
                     <execution>
                         <phase>generate-resources</phase>
@@ -78,7 +78,7 @@
                         <phase>generate-resources</phase>
                         <id>genkey</id>
                         <goals>
-                            <goal>genkey</goal>
+                            <goal>generateKeyPair</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -136,7 +136,7 @@
             <plugin>
                 <groupId>org.codehaus.cargo</groupId>
                 <artifactId>cargo-maven2-plugin</artifactId>
-                <version>1.4.7</version>
+                <version>1.9.0</version>
 
                 <executions>
                     <execution>
@@ -157,7 +157,7 @@
 
                 <configuration>
                     <container>
-                        <containerId>jetty8x</containerId>
+                        <containerId>jetty9x</containerId>
                         <systemProperties>
                             <runtime.environment>integrationdev</runtime.environment>
                         </systemProperties>

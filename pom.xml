@@ -19,7 +19,7 @@
         <repository>
             <id>public releases</id>
             <name>public releases</name>
-            <url>http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/</url>
+            <url>https://mvnrepository.com/</url>
         </repository>
     </repositories>
     <build>
@@ -94,7 +94,7 @@
                                         </versionRange>
                                         <goals>
                                             <goal>clean</goal>
-                                            <goal>genkey</goal>
+                                            <goal>generateKeyPair</goal>
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
@@ -186,6 +186,12 @@
                 <version>${blc.version}</version>
                 <type>jar</type>
                 <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>keytool-maven-plugin</artifactId>
+                <version>1.7</version>
+                <type>maven-plugin</type>
             </dependency>
             <dependency>
                 <groupId>org.broadleafcommerce</groupId>
