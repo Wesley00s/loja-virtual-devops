@@ -29,4 +29,5 @@
     <!-- Smartgwt requires quirk mode, so disable gwt warnings for now. -->
     <!-- http://planet.jboss.org/post/smartgwt_ie7_ie8_support -->
     <set-configuration-property name="document.compatMode" value="BackCompat"/>
+    <source path='' />
 </module>
